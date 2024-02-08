@@ -1,0 +1,150 @@
+<!DOCTYPE html
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midias/gatinho.png" type="image/x-icon">
+    <title>RESUMO HTML 1</title>
+    <link rel="stylesheet" href="resumo_style.css">
+</head>
+<body>
+    <h1>Códigos bases</h1>
+    <hr>
+    <p> 
+        <li>H1 é o cabeçalho primario, seguido de H2, H3, H4, H5 e H6</li>
+        <li>HR é uma linha horizontal </li>
+        <li>P é o conteúdo do site </li>
+        <li>para fazer um paragráfo ou uma quebra de texto usa-se o BR. Exemplo a seguir: </li>
+        te amo minduin, <br>trequinho, <br>panqueca <!--vocês são minha vida-->
+        <li>para adicionar comentários dentro do visual studio é usado a tag &lt;!--</li>
+        <li>para modificar mais de uma tag de uma vez basta clicar e segurar alt e ir clicando nas tags que deseja alterar</li>
+
+         <!--SÍMBOLOS E EMOJIS-->
+    <h1>Colocando símbolos no texto</h1>
+        <li>Para adicionar emoji se usa &#x, exemplo: &#x1F49E;</li>
+            <img src="midias/simbolos p2.png">
+            <img src="midias/simbolos.png" alt="">
+
+        <!--IMAGENS-->
+    <h1>Inserindo imagens</h1>
+
+        <li>Para inserir uma imagem basta adicionar img. Também é possível adicionar uma imagem direto da URL da imagem, basta adicionar o endereço do link da imagem dentro do src. Exemplo</li>
+            <img src="https://images.vexels.com/media/users/3/315587/isolated/lists/4c6c456e8b30ec39bd0e71bfb221d471-adora-vel-gatinho-comendo-um-pirulito-no-halloween.png" alt="">
+
+    <h1>FAVICON</h1>
+        <li>Para adicionar o favicon basta ir no cabeçalho e adicionar o link:favicon, em seguida apague o favicon.icon e clique em control + espaço.</li>
+
+    </p>
+     <!--- FORMATAÇÃO  DE TEXTO-->
+ <h1>Negrito ou destaque</h1>
+        <li>Para adicionar o negrito basta usar a tag B <b>forma não semântica</b></li>
+        <li>Outra forma de adicionar o destaque é com a tag STRONG <strong>forma semântica</strong></li>
+
+ <h1>Itálico ou ênfase</h1>
+        <li>Para adicionar o itálico basta utilizar a tag I <i>forma não semântica</i></li>
+        <li>Utiliza-se também a tag EM <em>forma semântica</em></li>
+
+ <h1>Texto marcado</h1>
+        <li>Podemos criar um texto marcado utilizando a tag MARK. Exemplo: <mark>amo gatinhos</mark>, <mark style="background-color: lightcoral;">para dar outra cor a tag basta adicionar após o primeiro marcador a tag style=background-color </mark></li>
+
+ <h1>Tamanho de texto</h1>
+        <li>A tag big não funciona mais na HTML, somente a tag small, pois o tamanho  grande é um estilo e pode ser acrescentada nas CSS, porém a forma em minúsculo pode ser usada para observações na formatação de texto. Exemplo: Leia as letras pequenas do contrato <small>amo você duardin</small></li>
+
+<h1>Texto deletado</h1>
+        <li>Podemos marcar um texto como excluído para indicar que deve ser lido, porém não deve ser considerado. Para isso usamos a tag del. Exemplo: <del>quiero recordar que la vida es un sueno</del></li>
+
+<h1>Texto inserido</h1>
+        <li>Podemos marcar o texto como inserido para dar ênfase e indicar que foi inserido depois usando a tag ins . Exemplo: <ins>eres pergunta e respuesta, mi euforia ...</ins></li>
+
+<h1>Texto sobrescrito</h1>
+        <li>Para inserir coisas do tipo x<sup>10</sup>-1 usa-se a tag sup </li>
+
+<h1>Texto subscrito</h1>
+        <li>Para inserir coisas do tipo H<sub>2</sub>O usa-se a tag sub </li>
+
+<h1>Código-fonte</h1>
+        <li><mark style="background-color: rgb(238, 113, 165);">Fonte monoespaçada</mark>: o comando document.getElementById é escrito em liguagem Java-Scrit, porém a formação do texto não possui uma fonte monoespaçada, usando a tag CODE o texto fica em espaçamento igual. Exemplo: <code>document.getElementById</code></li>
+        <li><mark style="background-color: rgb(238, 113, 165);">Espaçamento e organização de códigos:</mark> basta utilizar a tag pre que o espaçamento do visual studio começa a contar. Exemplo de organização de código:</li>
+            <pre>
+                <code>
+                    num = int(input('Digite um número'))
+                    if num % 2 == 0:
+                        print(f'0 número {num} é PAR)
+                    else:
+                        print(f'0 número {num} é ÍMPAR)
+                        print('Fim do programa')
+                </code>
+            </pre>
+
+<h1>Citação</h1>
+        <li>É possível efetuar uma formatação simples adicionando a tag Q, exemplo: como dizia minha mãe bebada <q>quero minha mãe.
+        </li>
+        <li>Para se utilizar uma citação maior se utiliza blockquote, exemplo</li>
+                <pre>
+                <blockquote>
+                você pode
+                não ter deixado
+                (muitas) manchas roxas
+                na minha pele,
+                mas deixou manchas
+                roxas escuras gigantes
+                por toda
+                minha alma.</blockquote>
+                </pre>
+        <li>É possível também adicionar um link para que o google saiba que aquela citação pertence a algum livro, basta colocar blockquote cite </li>
+
+<h1>Abreviação</h1>
+        <li>É possível colocar uma tag que quando o usuário passe o mouse por cima da abreviação seja possível visualizar o significado, basta usar abbr. Exemplo: <abbr title="Cascading Style Sheets">CSS</abbr> e <abbr title="HyperText Markup Language">HTML </abbr></li>
+
+<h1>LISTAS</h1>
+    <h2>Lista ordenada</h2>
+        <p>Para ordenar uma lista se usa ol, e para organizar a lista em número se usa dentro da tag ol a tag li. Exemplo:
+            <ol>
+                <li>Acordar</li>
+                <li>Estudar</li>
+                <li>Almoçar</li>
+            </ol>
+        para adicionar o tipo de ordenação de texto basta colocar ol type e selecionar a opção desejada, desejando que a lista se iniciei em outro número ou letra basta adicionar start e colocar o número/letra desejado. Exemplo: 
+            <ol type="1" start="5">
+                <li>Acordar</li>
+                <li>Estudar</li>
+                <li>Almoçar</li>
+            </ol>
+        
+    <h2>Lista não ordenadas</h2>
+        Para fazer uma lista basta colocar ul, exemplo:
+            <ul>
+                <li>cachorro</li>
+                <li>cavalo</li>
+            </ul>
+        Para modificar o tipo basta colocar o type, existem 3 opções de lista, circle, disc e square. Exemplo:
+            <ul type="circle" >
+                <li>cachorro</li>
+                <li>cavalo</li>
+            </ul>
+    <h2>Mesclagem de lista</h2>
+        É possível mesclar lista de OL e UL, basta adicionar uma tag dentro da outra.
+            <ol type="1" start="1">
+                <li>Estudar</li>
+                    <ul>
+                        <li>html</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                <li>Estudar</li>
+                <li>Estudar</li>
+            </ol>
+        
+    <h2>Lista de definição</h2>
+        <li>para definir um termo basta usar as tag DT= TERMO e DD= definição, segue exemplo:</li>
+        <p>
+            <dt>cubo mágico:</dt> <dd>é um jogo tridimensional composto de 6 faces de cores diferentes divididas cada uma em 9 partes de tamanhos iguais</dd>
+        </p>
+
+   
+
+
+    
+
+</body>
+</html>

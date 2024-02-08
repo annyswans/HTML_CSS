@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo de CSS</title>
+    <link rel="shortcut icon" href="midias/moranguinho.png" type="image/x-icon">
+    <link rel="stylesheet" href="resumo_style.css">
+</head>
+<body>
+         <h1>TIPOS DE ESTILOS DE CSS</h1>
+        <h2>Estilo inline</h2>
+            <ul>
+                <li>Estilo adicionado dentro do próprio HTML5 (não é recomendado a utilização pois essa é uma forma manual de estilização e deixa o HTML muito poluído, somente recomendado em casos isolados.)</li>
+            </ul>
+            
+        <h2>Estilo interno ou CSS local</h2>
+             <ul>
+                <li>Nesse estilo é usado a tag style dentro do cabeçalho, o estilo interno é dividio em partes (body, h1, mark...), basta adicionar a tag + {} e adicionar os estilos modificados lá dentro</li>
+             </ul>
+        <h2>Estilo externo</h2>
+            <ul>
+                <li>Criar folha de estilo separado, seguindo as regras do CSS. No ínicio do arquivo tudo que começar com @ simboliza uma regra.</li>
+                <li>Basta ir no cabeçalho e adicionar o link:css, em seguida passe o mouse em cima do link e clique em control + clicar. OBS: é possível adicionar mais de uma página de CSS</li>
+            </ul>
+             
+        <!--Cores-->
+        <h1>Cores</h1>
+        <h2>Psicologia das cores</h2>
+         <img src="midias/psicologia_das_cores.png" alt="psicologia das cores" >  <hr>
+
+         <h2>Temperatura e harmônia</h2>
+         <img src="midias/circulo_cromatico.png" alt="circulo cromático"> <hr>
+         <img src="midias/temperatura_das_cores.png" alt="Temperatura" width="450" height="450">
+         <img src="midias/circulo_cromatico_combinacao.png" alt="" width="450" height="450">
+
+         <h2>Paleta de cores</h2>
+            <ul>
+                <li>Para criar paletas de cores é possível usar o <a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="external">adobe color.</a>É possível identificar cores de uma imagem atráves do modo extrair temas; no modo explorar do adobe color é possível explorar as possibilidades de paletas criadas</li>
+                <li>Outra ferramento disponível é o <a href="https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF" target="_blank" rel="external">paletton</a> nele é possível visualizar um exemplo de como ficaria o site na paleta escolhida</li>
+                <li>Existe também o <a href="https://coolors.co" target="_blank" rel="external">coolors</a> que gera uma paleta de cores, nele é possível "trancar" uma cor caso goste dela, e ir modificando o restante.</li>
+            </ul>
+        
+         <h2>Inserindo cores nas CSS</h2>
+            <ul>
+                <li style="color: pink;"> representar pelo nome em inglês, exemplo:  blue</li>
+                <li style="color: #0078A7;">representação em hexadecimais, exemplo: #0000ff, #ffffff. (hexadecimais: 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.)</li>
+                <li style="color: rgb(260, 150, 37);"> representação atráves do RGB (porcentagem de red, green e blue)</li>
+                <li style="color: hsl(1700, 70%, 30%);">representação a partir de hsl (hue= matiz, saturation= saturação e lightness= luminosidade), represendo por números, exemplo: 200, 50%, 40%</li>
+                <li></li>
+            </ul>
+
+            <h2>Degradê nas CSS</h2>
+                <ul>
+                    <li>Para utilizar degradê se utiliza a tag background-image + linear- gradient; é necessário adicionar na descrição a direção e as cores; exemplo: to right, white, red (to right, to left, to top, to bottom)</li>
+                </ul>
+
+        <!--FONTES-->
+            <h1>Tipografia</h1>
+            <h2>Família das fontes</h2>
+                <ul>
+                    <li>É usado a tag font-family para alterar a fonte do site, normalmente é utilizado como o visual studio recomenda, por exemplo: "Arial, Helvetica, sans-serif;" pois caso um dispositivo não suporte a primeira fonte existe a possibilidade de outras 2. </li>
+                    <li>Para descobrir fontes familiares basta jogar no google "css web font combinations" ou <a href="https://www.w3schools.com/css/css_font_pairings.asp" target="_blank">w3schools.</a></li>
+                    <li>É possível generalizar o tipo de fonte desejada, assim cada navegador irá abrir a fonte padrão aceita por ele, basta colocar "serif, sans-serif ou monospaces".</li>
+                </ul>
+            <h2>Tamanho das fontes</h2>
+                <ul>
+                    <li>Existem dois tipos de medidas, as absolutas e as relativas.</li>
+                    <li>absolutas: cm, mm, in (polegadas), px, pt (ponto), pc (paica).</li>
+                    <li>relativas:  em (medida relativa ao tamanho atual da fonte), ex (relativo a altura X de uma fonte), rem (igual ao em porém relativo a fonte configurada no body) vw (largura da viewport, que é referente ao tamanho da tela do dispositivo), vh (altura da viewport) e %. </li>
+                    <li>Para configurar a font-sizy é recomendado utilizar somente px e em. </li>
+                    <li>16px equivale a 1em, o em é o tamanho natural da fonte. O recomendado é utilizar a medida em, pois se adapta ao tamanho da tela</li>
+                </ul>
+            <h2>Peso, estilo e shorthand font</h2>
+                <ul>
+                    <li>Peso é definido na largura da fonte, mais gorda ou magra.</li>
+                    <li>Não é possível alterar o peso das fontes padrões, somente de fontes específicas. Nenhum navegador possui essa fonte por padrão, sendo assim necessário adicionar no style;</li>
+                    <li>A tag font-weight só aceita as medidas de lighter, normal, bold, bolder ou número (100 a 900).</li>
+                    <li>A tag "font-style: italic ou normal" é utilizado para deixar a fonte em italico ou normal.</li>
+                    <li>A tag "text-decoration: underline;" é utilizada para sublinhar o texto.</li>
+                    <li>As tags font-family,font-weight, font-sizy e font-style são bastante utilizadas, e para simplificar é utilizado a propriedade shorthand. Existe uma ordem dentro da tag shorthand que é definido em font-style, font-weigth, font-sizy e por último a font-family.</li>
+                    <li>Essa propridade shorthand das fontes e definido na tag font, seguido das propriedades escolhidas para cada estilo, exemplo: font: italic bold 1em 'work sans' , sans-serif;</li>
+                </ul>
+            <h2>Google fontes</h2>
+                <ul>
+                    <li>Basta pesquisar por fonts google ou <a href="https://fonts.google.com" target="_blank">fonts google</a>, após escolher a fonte e o estilo da fonte desejada basta clicar em select e copiar e colar o código HTML atráves do @import </li>
+                    <li>É possível adicionar várias familias dentro de um @import, basta ir adicionando as opções desejas para o tipo de fonte.</li>
+                </ul>
+            <h2>Fontes externas</h2>
+                
+                <ul>
+                    <li>Existem vários sites para baixar fontes, por exemplo o <a href="https://www.dafont.com/pt/" target="_blank">dafont</a>;</li>
+                    <li>Quando for baixar uma fonte é importante prestar atenção se possui acentuação. Após baixar a fonte é necessário fazer a extração do arquivo.</li>
+                    <li>Para adicionar ao site é preciso adicionar um seletor font-face e adicionar na url o nome exato do arquivo. Após a url é necessário adicionar o formato do arquivo, que pode ser opentype (otf) ou truetype (ttf) , exemplo:
+                        <pre>
+                                @font-face {
+                                font-family: ;
+                                src: url(); formart ('opentype'), url(); formart ('opentype')
+                                }
+                        </pre>
+                    </li>
+                    <li>Formatos de arquivos: opentype (otf), truetype (ttf), embedded-opentype, truetype-aat (apple advanced typography ou svg) </li>
+                    <li>Assim como a fonte, o tipo de formato pode ser adicionado em várias linguagens para que todos os dispositivos suportem a fonte.</li>
+                </ul>
+                    
+            <h2>Caputurar fontes de um site</h2>
+
+                <ul>
+                    <li>Um exemplo de extensão do google é o fonts ninja, basta adicionar no google que o fonts ninja começa a analizar quais fontes foram utilizadas no site. Se passar o mouse em cima da fonte irá aparecer as informações relacionadas ao tamanho, peso, formato...</li>
+                </ul>
+            <h2>Alinhamento de texto</h2>
+                <ul>
+                    <li>Para fazer o alinhamento em css se utiliza a tag text-align, é possível utilizar 4 variações: center, left (esquerda), rigth (direita) ou justify (esquerda e direita)</li>
+                    <li>Para efeutar o espaçamento do paragráfo é utilizado a tag text-indent, normalmente utilizado em px ou em.</li>
+                </ul>
+
+    <a id="css" href ="css_2.html">CSS 2.0</a>
+    
+            
+</body>
+</html>

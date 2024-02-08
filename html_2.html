@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midias/gatinho.png" type="image/x-icon">
+    <title>Resumo HTML 2</title>
+    <link rel="stylesheet" href="resumo_style.css">
+    <style>
+        .dudsAsk {
+            text-align: center;
+            
+        }
+    
+        
+      </style>
+</head>
+<body>
+
+        <!--LINKS-->
+        <h1>LINKS</h1>
+        <p>Para criar um hiperlink basta usar a tag A, segue exemplo do <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/10%20-%20Ligações%20em%20toda%20parte.pdf">link do github</a></p>
+        <p>É possível avisar ao google sobre o idioma que a página vai te direcionar, usando hreflang após o link anexado no hreaf.</p> 
+        <p>Quando o usuário clica no link o site é substituido e a guia da sua página fechada, para que isso não ocorra utilize a tag target + _blank, segue exemplo: <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/10%20-%20Ligações%20em%20toda%20parte.pdf" target="_blank">github guanabara</a></p>
+        <h3>LINKS EXTERNOS</h3>
+            <h3>Indicações do link </h3>
+                <p>basta indicar o nível do link com a tag rel</p>
+                <ul>
+                     <li><strong>next:</strong> usado para indicar que o link leva a página seguinte da página atual</li>
+                    <li><strong>prev:</strong> usado para indicar que o link leva a página anterior a página atual</li>
+                    <li><strong>author: </strong>indica que o link leva para o site do autor do artigo atual</li>
+                    <li><strong>external:</strong> indica que o link leva a um site diferente do atual</li>
+                    <li><strong>nofollow:</strong> indica que é um link externo não endossado, tipo link pago</li>
+                    <li><strong>self:</strong> para abrir na própria aba</li>
+                </ul>
+        <h3>LINKS INTERNOS</h3>
+                <ul>
+                    <li>Para criar uma relação de páginas basta utilizar a tag a, segue exemplo da página do <a href="html_1.html">primeiro resumo </a> </li>
+                    <li>Caso a página esteja em uma pasta diferente nos arquivos basta colocar <mark style="background-color: rgb(247, 10, 10);"> ../ </mark>para voltar a pasta anterior </li>
+                </ul>
+        <h3>LINKS PARA DOWNLOAD</h3>
+                <ul>
+                    <li>Para baixar arquivos basta adicionar dentro da tag A, a tag <mark style="background-color: hotpink;">download</mark> e depois type, segue exemplo do  <a href="midias/Aula_10_ link.pdf" download="midias/Aula_10_ link.pdf" type="application/pdf">pdf da aula de links </a><li>
+                        <li>Cada tipo de arquivo possui um tipo diferente para se referenciar, para descobrir basta ir no site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank">iana media types</a></li>
+                </ul>
+
+
+        <!--MÍDIAS -->
+        <h1>IMAGEM DINÂMICA</h1>
+        <ul>
+            <li>É possível adicionar 3 tamanhos de imagens no site para que traga uma experiência positiva para o usuário, aumentando e diminuindo de acordo com o tamanho de tela do dispositivo. Basta utilizar a tag picture para adicionar várias fontes, segue exemplo</li>
+            <li>Tamanho das imagens: imagem pequena (300x300), imagem média (700x700) e imagem grande (1000x1000)</li>
+            <li>Adicione dentro da tag picture a tag img, e acima dela adicione source media type, troque a descrição de min por max e adicione o tamanho da imagem, da menor para a maior. Em seguida adicione a imagem escolhida em srcset e coloque em type o tipo de imagem (png)</li>
+            <li>Adicione sempre 50px a mais para que a barra de rolagem não apareça.</li>
+        </ul>
+        <picture>
+            <source media="(max-width: 750px)" srcset="midias/coelho_p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="midias/coelho_m.png" type="image/png">
+            <img src="midias/coelho_g.png" alt="imagem dinâmica">
+        </picture>
+
+        <h1>Aúdio</h1>
+        <p>Existem 2 formas de adicionar aúdio ao site:</p>
+            <ul>
+                <li> a primeira é utilizando a tag audio e adicionando após as "" as descrições de controls e autoplay, segue exemplo:</li>
+                    <audio src="midias/Slapping Three Faces.mp3" controls autoplay  ></audio>
+                <br> entretando, essa tag se limita a navegadores que aceitam ao modelo de aúdio escolhido. </li>
+                <li>a segunda forma é utilizando a tag audio, apagando a src e adicionando no lugar a tag source src, adicionar o aúdio e em seguida o tipo de mídia, assim podendo adicionar vários formatos de aúdio, segue exemplo.</li>
+                    <audio preload="metadata" controls>
+                        <source src="midias/Slapping Three Faces.mp3" type="audio/mpeg">
+                        <source src="midias/Slapping Three Faces.mp3" type="audio/ogg">
+                    </audio>
+            </ul>
+        <p>É possível adicionar parametros após a tag audio, sendo elas:
+            <ul>
+                <li>preload: auto (site só irá carregar após o dowload do aúdio), metadata (carrega somente informações do arquivo) e none (só carrega quando o usuário clica no aúdio)</li>
+            </ul>
+        </p>
+        
+        <h1>Vídeos</h1>
+         <p>Existem 3 tipos principais de formatos de vídeos, são eles: MP4, WEBM e OGV. </p>
+            <ul>
+                <li>É recomendado utilizar o programa handbrake para modificar o formato e a qualidade do vídeo, para sites com hospedagem local é recomendado no máximo até 1.080pixel, para que o custo não fique elevado.</li>
+            </ul>
+         <h3>Vídeos hospedados localmente</h3>
+          <p>Para adicionar vídeos basta utilizar a tag video, segue exemplo do amor da minha vida</p>
+         <video src="midias/duds.mp4" width="400" controls></video>
+             <ul>
+                <li>Utiliza-se dentro da tag video width para reduzir ou aumentar o tamanho do vídeo dentro do site</li>
+                <li>Para reproduzir o vídeo assim como o aúdio é necessário adicionar o controls</li>
+                <li>É recomendado adicionar todos os formatos de vídeos, aúdios e imagens, para que carregue em todos os dispositivos.</li>
+             </ul>
+             <h3>Vídeos com hospedagem externa</h3>
+              <p>Basta ir em um vídeo externo (youtube por exemplo) e clicar no modo incorporar que o próprio youtube já disponibiliza uma tag em html para adicionar ao site, segue exemplo: </p>
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/hvG3TbH-rUE?si=1V4_LnCAY4bUv7lt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    <h2 class="dudsAsk" >Perguntas do teste do guanabara que meu mozin acha importante</h2>
+                    <ol>
+                        <strong>
+                            <li>A melhor estratégia para criar um espaço relativo a dez quebras de linha em nosso site é:</li>
+                        </strong>
+                         R: usar configurações de estilo em CSS e especificar o espaçamento todo de uma vez
+                         <strong>
+                             <li>A tag title é adicionada dentro de qual área de um documento HTML?</li>
+                         </strong>
+                        R: head
+                        <strong>
+                            <li>Os símbolos de &lt; e de &gt; são usados em HTML para delimitar tags. Mas se quisermos mostrá-los no navegador, precisamos representá-los como:</li>
+                        </strong>
+                        R: & lt; e & gt;
+                        <strong>
+                            <li>A sigla HTML significa:</li>
+                        </strong>
+                        R: HyperText Markup Language
+                        <strong>
+                            <li>Todas as configurações visuais dos elementos HTML são realizadas pela linguagem CSS. Agrupamos todas as declarações CSS de um mesmo elemento dentro de um(a):</li>
+                        </strong>
+                        R:  seletor
+                        <strong>
+                            <li>Qual é a tag de um documento HTML adicionada pra manter a compatibilidade com os caracteres acentuados, muito comuns na língua Portuguesa?</li>
+                        </strong>
+                        R:  meta charset=“UTF-8”
+                    </ol>
+
+         
+
+
+</body>
+</html>

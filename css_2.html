@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2.0</title>
+    <link rel="stylesheet" href="resumo_style.css">
+</head>
+<body>
+    
+         <!--Seletores ID e class-->
+        <h1>Seletores Personalizados</h1>
+        <h2>Usando ID com CSS</h2>
+            <ul>
+                <li>Os seletores são utilizados quando você quer dar uma formatação diferente para uma mesma tag ou tags semelhantes como é o caso da tag title e h1.</li>
+                <li>Para adicionar uma formatação diferente basta ir na tag escolhida e acrescentar a sua frente a tag id e nomeá-la, exemplo: id= "principal". Em seguida vá nas configurações de CSS externo e adicione a tag desejada + #(nome escolhido), exemplo: h1#principal {configurações desejadas} ou #principal {configurações desejadas}. </li>
+                <li>Em HTML "ID" = em CSS é "#"</li>
+                <li>A regra do W3C é que não se pode utilizar 2 seletores ID iguais no HTML.</li>
+            </ul>
+    
+        <h2>Usando CLASS</h2>
+            <ul>
+                <li>Quando é necessário utilizar 2 seletores para uma tag utilizasse o seletor class</li>
+                <li>Para adicionar uma formatação diferente basta ir na tag escolhida e acrescentar a sua frente a tag class e nomeá-la. Em seguida vá nas configurações de CSS externo e adicione a tag desejada + .(nome escolhido) ou somente .(nome escolhido), exemplo: h1.(nome escolhido) {configurações desejadas}. </li>
+                <li>Em HTML "CLASS" = em CSS é "."</li>
+                <li>É possível adicionar mais de uma classe a uma tag, basta adicionar a sua frente sem vírgula, exemplo: &lt;h1  class = "principal destaque"&gt; (principal seria um class configurado com um estilo e destaque outro)</li>
+            </ul>
+    
+        <h2>Pseudo classes</h2>
+            <ul>
+                <li>As pseudo classes estão relacionadas ao seu estado que é representado por ":", exemplo; hover é utilizado para que o estilo mude quando o mouse passa por cima da tag aplicada <div>(passe o mouse aqui)</div></li>
+                <li>Outros exemplos de pseudo classes são: visited (visitados), active (click do mouse), checked ( estilizar elementos marcados ou selecionados), empty (elementos vazios) e focus (estilizar elemento em foco, quando selecionado ou ao clicar, para que o usuário saiba onde está selecionando)</li>   
+            </ul>
+        <h2>Pseudo elementos</h2>
+            <ul>
+                <li>Pseudo elementos estão relacionados ao conteúdo, e pode ser usado nas id ou class. Os pseudo elementos são representados por "::" e os principais utilizados nas CSS são: before, after, first-letter ou first-line. Exemplo de aviso ao usuário que é um link:</li>
+                    <pre>
+                            a::after {
+                                content: '[link]',
+                            }
+                        que ficará:
+                    <a href="tabela_css.html">tabela [link]</a>
+                    </pre>
+            </ul>
+        
+        <!--Modelos de caixas-->        
+        <h1>Modelo de caixas</h1>
+        <h2>Modelo box-level </h2>
+            <ul>
+                <li>Um elemento box-level sempre vai ser iniciado em uma nova linha e irá ocupar a largura total da tela do dispositivo. O elemento box-level mais conhecido é o div e suas variações (main, section, aside). Segue uma lista de exemplos de elementos box-level:
+                    <ul type="square">
+                        <li> h1-h6, header, hr, li, ol, p, pre, section, table, tfoot, ul, video, main, nav, noscript,div, dt, figure, footer, form, dl, fieldset, figcaption,address, article, aside, blockquote, canvas, dd... </li>
+                    </ul>
+                </li>
+            </ul>
+                
+        <h2>Modelo inline-level</h2>
+            <ul>
+                <li>Um elemento inline-level não inicia uma nova linha, continua do exato ponto onde parou e sua largura vai ocupar apenas seu tamanho relativo ao seu conteúdo. Segue uma lista de exemplos de elementos inline-level:
+                    <ul type="square">
+                        <li>a, abbr, acronym, b, bdo, br, button, cite, code, dfn, em, i, img, input, kbd, label, map, object, output, q, samp, script, select, small, span, strong, sub, textarea, tt, var... </li>
+                    </ul>
+                </li>
+            </ul>
+        <h2>Utilizando shorthand</h2>
+            <ul>
+                <li>As shorthands servem para simplificar o estilo do corpo, cada tag tem sua ordem de estilo. Segue a ordem de cada tag e seus respectivos shorthands:
+                </li>
+                <li><mark>borden:</mark> width, style e color. Exemplo: "borden: 10 px solid orange;" </li>
+                <li><mark>padding:</mark> top, rigth, bottom e left. Exemplo: "padding: 10 px 10px 10px 10px;", quando se tem dados iguais é possível simplificar apenas com "padding: 10px;". Quando são duas medidas ficaria "padding: 10 px 20px;"</li>
+                <li><mark>margin: </mark>top, rigth, bottom e left. Exemplo: "margin: 10 px 10px 10px 10px;" ou quando desejar centralizar basta utilizar "margin: auto 10px auto 10px;" </li>
+                <li><mark>outline:</mark> width, style e color. Exemplo: "outilne: 5px auto blacl;"</li>
+            </ul>
+
+        <h2>Tags de agrupamento</h1>
+            <ul>
+                <li>Servem para organizar de forma semântica o site, existem 3 tags sendo elas: <mark>header</mark> (cabeçalho do site), <mark>main</mark> (corpo do site) e <mark>footer </mark>(rodapé).</li>
+            </ul>
+
+        <h2>Sombras em caixas</h2>
+            <ul>
+                <li>O sombreamento de caixas é representado pela shorthand <mark>box-shadow</mark>, as ordens das informações são deslocamento horizontal, deslocamento vertical, espalhamento e sombra. Segue exemplo: "box-shadow: 1px 1px 1px black;"</li>
+                <li>obs: para ficar mais fácil a visualização do box-shadow é recomendado utilizar o expecionar do navegado para visualizar e alterar o visual do site.</li>
+            </ul>
+
+
+                    <hr>
+                    <li>Diferença entre div e span, div pula uma linha e span cria uma caixa, porém segue na mesma linha</li>
+                    <li>Para esconder uma tag p dentro da div basta adicionar o <, que diz que a tag p é filha de div, exemplo: div < p.</li>
+                    <li>display: none (não aparecer as informações dentro daquela tag). Exemplo: div > p {display: none;}, ou seja, qualquer tag p adicionada dento de uma div não irá monstrar o conteúdo. Caso queira que o texto apareça quando passar o mouse em cima basta adicionar div > p {display: block;}</li>
+                    <li>display: block </li>
+                    <li>text-decoration: none; tira o sublinhado do texto ou link </li>
+    
+                    <input type="checkbox" id="myCheckbox">
+        <label for="myCheckbox">Marcar esta caixa</label>
+    
+        <h2>Variaveis em CSS</h2>
+            <ul>
+                <li>É possível facilitar a padronização das CSS no site, como a fonte e as cores utilizadas na estetica. Basta adicionar <mark>:root</mark> + <mark> --</mark> e a descrição desejada. Exemplo:
+                    <pre>
+                        :root {
+                            --cor1: #2C9D03;
+                            --cor2: #9FO4F6;
+
+                            --fonteprincipra: arial, verdana, sans-serif;
+                        }
+                    </pre> 
+                </li>
+                <li></li>
+            </ul>
+            
+            <!--REGRAS CSS-->
+        <h1>REGRAS CSS</h1>
+             <ul>
+                <li>Para adicionar configuração global nas CSS se usa o *</li>
+                 <li>@charset "UTF-8"; padronização dos acentos</li>
+            
+             </ul>
+    
+             <span>oi</span> <span>teste</span>
+             <div>oi</div> <div>teste</div>
+
+             <h1>DICAS</h1>
+             <li>Utilizar o site mockflow para monstar visualmente como deseja o site, semelhante ao figma</li>
+
+</body>
+</html>
