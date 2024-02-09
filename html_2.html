@@ -59,6 +59,7 @@
             <img src="midias/coelho_g.png" alt="imagem dinâmica">
         </picture>
 
+
         <h1>Aúdio</h1>
         <p>Existem 2 formas de adicionar aúdio ao site:</p>
             <ul>
@@ -94,36 +95,73 @@
               <p>Basta ir em um vídeo externo (youtube por exemplo) e clicar no modo incorporar que o próprio youtube já disponibiliza uma tag em html para adicionar ao site, segue exemplo: </p>
                  <iframe width="560" height="315" src="https://www.youtube.com/embed/hvG3TbH-rUE?si=1V4_LnCAY4bUv7lt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-                    <h2 class="dudsAsk" >Perguntas do teste do guanabara que meu mozin acha importante</h2>
-                    <ol>
-                        <strong>
-                            <li>A melhor estratégia para criar um espaço relativo a dez quebras de linha em nosso site é:</li>
-                        </strong>
-                         R: usar configurações de estilo em CSS e especificar o espaçamento todo de uma vez
-                         <strong>
-                             <li>A tag title é adicionada dentro de qual área de um documento HTML?</li>
-                         </strong>
-                        R: head
-                        <strong>
-                            <li>Os símbolos de &lt; e de &gt; são usados em HTML para delimitar tags. Mas se quisermos mostrá-los no navegador, precisamos representá-los como:</li>
-                        </strong>
-                        R: & lt; e & gt;
-                        <strong>
-                            <li>A sigla HTML significa:</li>
-                        </strong>
-                        R: HyperText Markup Language
-                        <strong>
-                            <li>Todas as configurações visuais dos elementos HTML são realizadas pela linguagem CSS. Agrupamos todas as declarações CSS de um mesmo elemento dentro de um(a):</li>
-                        </strong>
-                        R:  seletor
-                        <strong>
-                            <li>Qual é a tag de um documento HTML adicionada pra manter a compatibilidade com os caracteres acentuados, muito comuns na língua Portuguesa?</li>
-                        </strong>
-                        R:  meta charset=“UTF-8”
-                    </ol>
 
+        <h1>RESPONSIVIDADE DE IMAGEM</h1>
+            <ul>
+                <li>Utilize a extensão 'window resizer' para verificar o tamanho de tela que começa a afetar o site.</li>
+                <li>utiliza-se a tag width para criar o tamanho máximo do site, porém é melhor utilizar as tags "min-width e max-width" em seguida adicione a tag <mark>margin: auto;</mark> para centralizar:</li>
+                    <pre>
+                        exemplo:
+                                min-width: 320px;
+                                max-width: 800px;
+                                margin: auto;
+                    </pre>
+                <li>para tornar a imagem responsiva basta utilizar a tag nas configurações de estilo "img{width: 100%;}" + adicionar a responsividade de picture no HTML. </li>
          
+                <P>OBS: EXISTE OUTRAS TECNICAS DE RESPONSIVIDADE DO SITE, PESQUISAR SOBRE FLEX BOX</P>
+            </ul>
+         
+        <h1>RESPONSIVIDADE DE VIDEO</h1>
+             <ul>
+                 <li>É necessário usar as configuração de</li> 
+         
+                    <pre>
+                        div.video {
+                            background-color:;
+                            margin: ;
+                            padding: ;
+                            position: relative;
+                            padding-bottom: ;
+                        }
+                             
 
+                        div.video>iframe {
+                            position: absolute;
+                            top: 5%;
+                            left: 5%;
+                            width: 90%;
+                            height: 90%;
+                             }
+                    </pre>
+                </ul>
+
+        <h2 class="dudsAsk" >Perguntas do teste do guanabara que meu mozin acha importante</h2>
+            <ol>
+                <strong>
+                    <li>A melhor estratégia para criar um espaço relativo a dez quebras de linha em nosso site é:</li>
+                </strong>
+                    R: usar configurações de estilo em CSS e especificar o espaçamento todo de uma vez
+                <strong>
+                    <li>A tag title é adicionada dentro de qual área de um documento HTML?</li>
+                </strong>
+                    R: head
+                <strong>
+                    <li>Os símbolos de &lt; e de &gt; são usados em HTML para delimitar tags. Mas se quisermos mostrá-los no navegador, precisamos representá-los como:</li>
+                </strong>
+                    R: & lt; e & gt;
+                <strong>
+                    <li>A sigla HTML significa:</li>
+                </strong>
+                    R: HyperText Markup Language
+                <strong>
+                    <li>Todas as configurações visuais dos elementos HTML são realizadas pela linguagem CSS. Agrupamos todas as declarações CSS de um mesmo elemento dentro de um(a):</li>
+                </strong>
+                    R: seletor
+                <strong>
+                    <li>Qual é a tag de um documento HTML adicionada pra manter a compatibilidade com os caracteres acentuados, muito comuns na língua Portuguesa?</li>
+                </strong>
+                    R: meta charset=“UTF-8”
+                    </ol>
 
 </body>
 </html>
