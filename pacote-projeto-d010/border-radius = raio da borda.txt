@@ -1,0 +1,56 @@
+border-radius = raio da borda
+box-shadow
+line-height: altura da linha
+list-style-position: inside (lado de dentro), ou list-style-position: outside (lado de fora, modo padrão da ul)
+columns - número de colunas da ul
+transition-duration:  - transição de movimentos do mouse sobre a movimentação hover do link
+quando quiser configurar todos os elementos de uma tag mesmo que tenha outras dentros não se utiliza o > (filho). Exemplo: dentro de uma tag main tenho uma tag article, se eu utilizar a tag em CSS main>p será configurado somente o estilo fora de article. Nesse caso não utilizamos o >, e ficaria main p {configuração desejada}, sendo assim configurado todos os p dentro da tag main e article
+
+
+                            BORDA DECORADA COM CSS
+
+
+
+                             RESPONSIVIDADE 
+
+Utilize a extensão window resizer para verificar o tamanho de tela que começa a afetar o site.
+utiliza-se a tag width para criar o tamanho máximo do site, porém é melhor utilizar as tags "min-width e max-width" em seguida adicione a tag margin: auto; para centralizar:
+
+exemplo: 
+min-width: 320px;
+max-width: 800px;
+margin: auto;
+
+
+para tornar a imagem responsiva basta utilizar a tag nas configurações de estilo "img{width: 100%;" + adicionar a responsividade de picture no HTML. 
+
+EXISTE OUTRAS TECNICAS DE RESPONSIVIDADE DO SITE (PESQUISAR SOBRE FLEX BOX"
+
+                          RESPONSIVIDADE DE VIDE0
+
+É necessário usar as configuração de 
+
+div.video {
+    background-color:;
+    margin: ;
+    padding: ;
+    position: relative;
+    padding-bottom: ;
+}
+
+div.video>iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+                        git e github
+
+git = 
+github = 
+
+
+espaço em branco (‎ ‎  ‎‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎)‎‎
