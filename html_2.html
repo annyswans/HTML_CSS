@@ -11,7 +11,27 @@
             text-align: center;
             
         }
+
+        div.quadrado {
+            height: 300px;
+            width: 300px;
+            background-color: beige;
+            display: inline-block;
+            padding: 10px;
+            border: 5px solid black;
+        }
     
+        div#ex1 {
+            background-color: blueviolet;
+        }
+
+        div#ex2 {
+            background-image: linear-gradient(to bottom, yellow, orange );
+        }
+
+        div#ex3 {
+            background-image: url(https://img.freepik.com/vetores-premium/padrao-de-formas-geometricas-repetidas-cubos-com-bordas-roxas-e-preenchimento-lilas-layout-sem-costura-vetorial_326821-3096.jpg)
+        }
         
       </style>
 </head>
@@ -59,7 +79,17 @@
             <img src="midias/coelho_g.png" alt="imagem dinâmica">
         </picture>
 
+        <h2>IMGEM NO FUNDO DO SITE </h2>
+            <ul>
+                <li>Para adicionar imagens de fundo basta adicionar a tag <mark>background-color: url ('').</mark> Obs: é possível criar caixas de imagens utilizando a tag div + um dos seletores (class ou id). Segue exemplo: </li>
 
+            <div class= 'quadrado'; id="ex1"></div>
+            <div class= 'quadrado';  id="ex2"></div>
+            <div class= 'quadrado';  id="ex3"></div>
+
+            <li>Para que a imagem não crie repetições é utilizado a tag <mark>background-repeat: no-repeat;</mark>, ou é possível usar a repetição de x e y.</li>
+            <li>para configurar a posição da imagem utiliza-se a tag <mark>background-position: ;</mark>. As variações dessa própriedade são: left top, left center, left bottom, right top, right center, right bottom, center top, center center e center bottom</li>
+            </ul>
         <h1>Aúdio</h1>
         <p>Existem 2 formas de adicionar aúdio ao site:</p>
             <ul>
