@@ -1,0 +1,56 @@
+@charset "UTF 8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --fonte-padrao: "Sriracha", arial, sans-serif;
+    --font-destaque: "Passion One", arial, sans-serif;
+
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--font-destaque);
+
+}
+
+main section {
+    font-family: var(--fonte-padrao);
+    padding: 20px;
+}
+
+.cordel1 {
+    background-color: white;
+}
+
+.cordel2 {
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed ;
+    background-position: center center;
+    box-shadow: 10px;
+
+}
+
+.cordel3 {
+
+}
+
+.cordel4 {
+    background-image: url(imagens/background002.jpg);
+    background: url(imagens/background002.jpg) center center no-repeat fixed;
+    background-size: cover;
+
+}
+
+.cordel5 {
+
+}
