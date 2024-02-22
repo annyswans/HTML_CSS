@@ -28,7 +28,8 @@ mark {
  }
 
  h3 {
-    color: #F291AB;
+    color: #6e7ae4;
+    text-align: center;
 
  }
 
@@ -54,4 +55,10 @@ table {
 td {
    border: 1px solid black;
    padding: 5px;
+}
+
+th {
+   border: 1px solid black;
+   padding: 5px;
+   background-color: dimgray;
 }

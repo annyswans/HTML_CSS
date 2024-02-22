@@ -143,11 +143,27 @@
 
    <h1>TABELAS EM HTML</h1>
         <ul>
-            <li>Hierarquia de tabela simples: table, table row, table header, table data</li>
+            <li><mark>Hierarquia de tabela simples:</mark> table, table row, table header, table data</li>
             <li><mark>table:</mark> serve para delimitar o tamanho da tabela.</li>
             <li><mark>tr (table row):</mark> linhas da tabela</li>
             <li><mark>td (table data):</mark> dados da tabela</li>
+            <li><mark>th (table head):</mark> titulo da tabela</li>
         </ul>
+
+        <ul>
+            <li><mark>Hierarquia de tabelas grandes:</mark>TABLE, CAPTION THEAD, TBODY, TFOOT. obs: Dentro de THEAD, TBODY, TFOOT é possível ter tr, td e th.</li>
+            <li><mark>caption:</mark> legenda da tabela.</li>
+            <li><mark>thead:</mark>cabeçalho da tabela.</li>
+            <li><mark>tbody: </mark>corpo da tabela.</li>
+            <li><mark>tfoot: </mark>rodapé da tabela.</li>
+        </ul>
+
+        <h3>Escopo de titulo em tabelas</h3>
+            <p>É utilizado para facilitar os mecanismos de busca do google, adicionado na frente da tag th. Segue exemplo</p>
+                <pre>
+                    &lt;th scope= "col" &gt; (se os dados da tabela estiverem abaixo) &lt;th &gt;
+                    &lt;th scope= "row" &gt; (se os dados estiverem a frente)&lt;th &gt;
+                </pre>
 
 
     
