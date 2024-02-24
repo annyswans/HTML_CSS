@@ -164,6 +164,35 @@
                     &lt;th scope= "col" &gt; (se os dados da tabela estiverem abaixo) &lt;th &gt;
                     &lt;th scope= "row" &gt; (se os dados estiverem a frente)&lt;th &gt;
                 </pre>
+        
+        <h3>Efeito zebrado em tabelas com HTML e CSS</h3>
+            <ul>
+                <li>Para utilizar o efeito zebrado na tabela basta configurar na CSS dentro da tag td a pseudo-classe <mark>nth-child</mark>.</li>
+                <li>A pseudo-classe "nth-child" seleciona elementos com base em suas posições em um grupo de elementos irmãos. Podendo ter valores 'odd' (ímpar) ou 'even' (par), também pode ser representada pela notação "An+B". </li>
+                <li>Para o efeito zebrado na tabela é utilizado a expressão:  
+                    <pre>
+                        tbody > tr:nth-child (2n); ou tbody > tr:nth-child (even) - a cada n dados um efeito ficará zebrado.
+                        background-color: lightgray;
+                    </pre>
+                </li>
+            </ul>
+
+        <h3>Cabeçalho fixo em tabelas grandes</h3>
+            <ul>
+                <li>Adicione nas CSS as configurações:
+                    <pre>
+                        table {
+                            position: relative;
+                        }
+
+                        thead > tr > th {
+                            position: sticky; 
+                            top: -1px;(valor desejado)
+                        }
+                    </pre>
+                </li>
+            </ul>
+    
 
 
     
