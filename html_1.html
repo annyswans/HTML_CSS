@@ -163,6 +163,8 @@
                 <pre>
                     &lt;th scope= "col" &gt; (se os dados da tabela estiverem abaixo) &lt;th &gt;
                     &lt;th scope= "row" &gt; (se os dados estiverem a frente)&lt;th &gt;
+                    &lt;th scope= "colgroup"&gt; (se os dados estiverem abaixo e em mais de uma coluna.)
+                    &lt;th scope= "rowgroup"&gt; (se os dados estiverem a frente e em mais de uma linha.)
                 </pre>
         
         <h3>Efeito zebrado em tabelas com HTML e CSS</h3>
@@ -191,7 +193,55 @@
                         }
                     </pre>
                 </li>
+
+            <h3>Mesclagem de células</h3>
+                <ul>
+                    <li>A mesclagem de células ocorre quando é necessário utilizar 2 espaços para um único dado pela subclasse <mark>colspan</mark> = 'quantidade de espaço' ou <mark>rowspan</mark> ='quantidade de espaço', segue exemplo: </li>   
+                </ul>
             </ul>
+
+            <table>
+                <tr>
+                    <td>A</td>
+                    <td colspan="2">B</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">D</td>
+                    <td>E</td>
+                    <td>F</td>
+                </tr>
+
+                <tr>
+                    <td>G</td>
+                    <td>H</td>
+                </tr>
+            </table>
+
+            <h3>Agrupando Colunas com colgroup</h3>
+                <ul>
+                    <li>Para estilizar uma tabela por linha basta colocar a tag class em "tr". Porém para persolizar uma coluna basta utilizar a tag <mark>colgroup</mark>, adicionar quantas colunas possui a tabela e adicionar as class dentro da tag, segue exemplo:</li>
+                        <pre>
+                            &lt;table&gt; 
+                                &lt;colgroup&gt; 
+                                    &lt;col class="ex1"&gt; 
+                                    &lt;col class="ex2"&gt; 
+                                    &lt;col class="ex3"&gt; 
+                                &lt;colgroup&gt; 
+
+                                &lt;thead&gt; 
+                                    &lt;tr&gt; 
+                                    &lt;tr&gt; 
+                                &lt;thead&gt; 
+                            &lt;table&gt; 
+
+                        </pre>
+                </ul>
+
+                <h3>Tabelas responsivas</h3>
+                    <ul>
+                        <li>Para adicionar responsividade na barra lateral basta adicionar a tabela inetira dentro da tag div id container Na CSS adicione overflow-x </li>
+                    </ul>
     
 
 
