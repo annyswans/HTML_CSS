@@ -25,12 +25,19 @@
                     <li><a href="C:\Users\eduar\Desktop\dayo\HTML_CSS\html_2.html" target="frame">Resumo HTML 2</a></li>
                     <li><a href="C:\Users\eduar\Desktop\dayo\HTML_CSS\css.html" target="frame">Resumo CSS</a></li>
                     <li><a href="C:\Users\eduar\Desktop\dayo\HTML_CSS\css_2.html" target="frame">Resumo CSS 2</a></li>
-            <iframe name="frame" src="" frameborder="0"></iframe>
+            <iframe name="frame"  srcdoc="<h1>CLIQUE EM ALGUMA DAS OPÇÕES ACIMA</h1>" frameborder="0"></iframe>
                 <li>Nem todos os dispositivos são compatíveis com o iframe, então o recomendado é colocar um link dentro do iframe</li>
                 <li>É possível adicionar parametros de rolagem para o iframe usando a tag <mark>scolling= ""</mark>, sendo usado as configurações de "auto" (rolagem quando o site excede), "yes" (aparece tela de rolagem mesmo sem exceder) e "no" (não permite a rolagem) </li>
                 <li>A configuração de frameborder dentro do iframe só aceita 2 númerações, sendo ela 0 (sem borda) e 1 (com borda). Para o tamanho é necessário configurar pela tag border.</li>
                 <li>Para adicionar várias páginas pessoais e abrir no iframe basta adicionar a subclasse <mark>name</mark> em iframe, após basta adicionar <mark>target="nome escolhido</mark>"</li>
-            
+                <li>Para não deixar o iframe em branco basta trocar o src por <mark>srcdoc</mark>, assim é possível adicionar conteúdos de HTML dentro do iframe. (não recomendado por ser bastante simples e feio)</li>
+            </ul>
+
+            <h2>Tornando o IFRAME seguro</h2>
+            <ul>
+                <li>Para bloquear que sites externos capture dados do iframe que você utilizoué importante colocar a configuração <mark>sandbox="sandbox"</mark> dentro de iframe. (no caso de iframes de sites externos) </li>
+                <li>Também é importante utilizar a configuração <mark>referrerpolicy="no-referrer", não vai permitir que nenhum site capture informçaões</mark></li>
+                <li>Outras configurações são <mark>sandbox="allow-same-origin"</mark>, (permitir conteúdo de mesma origem) ou <mark>sandbox="allow-forms"</mark> (permitir formularios) + <mark>sandbox="allow-scripts"</mark> (permitir HTML). É possível juntar todas essas configurações usando sandbox" allow-same-origin allow-forms allow-scripts"</li>
             </ul>
 
 
